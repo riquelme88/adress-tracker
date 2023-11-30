@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <title>Adress Track</title>
+</head>
+<body>
+    <header>
+        <h1>IP Address Tracker</h1>
+        <label >
+            <input id="input"  type="text" placeholder="Search for any IP address or domain">
+            <div class="arrow"><img src="icon-arrow.svg" alt=""></div>
+        </label>
+    </header>
+    <main>
+        <div class="infos">
+            <div class="info border-r">
+                <p>Ip adress</p>
+                <h3 id="ip">192.212.174.101</h3>
+            </div>
+            <div class="info border-r">
+                <p>Location</p>
+                <h3 id="location">Brooklyn, NY 10001</h3>
+            </div>
+            <div class="info border-r">
+                <p>Timezone</p>
+                <h3 id="timezone">UTC -05:00</h3>
+            </div>
+            <div class="info ">
+                <p>Isp</p>
+                <h3 id="isp">SpaceX Starlink</h3>
+            </div>
+        </div>
+        <div id="map"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
