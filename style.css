@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 header{
@@ -79,10 +80,11 @@ main{
 
 .info p{
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: #666;
     margin-bottom: 15px;
+    font-weight: 500;
 }
 
 .border-r{
@@ -92,6 +94,7 @@ main{
 .info h3{
     font-size: 18px;
     max-width: 165px; 
+    font-weight: 700;
 }
 
 #map{
@@ -120,6 +123,121 @@ main{
     }
 
     .info p{
-        font-size: 26px;
+        font-size: 23px;
     }
+
+    .info h3{
+        font-size: 28px;
+        max-width: 225px; 
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    header h1{
+        font-size: 25px;
+        
+    }
+
+    label input{
+        width: 300px;
+        height: 35px;
+    }
+    .arrow{
+        height: 35px;
+        width: 35px;
+    }
+
+    .infos{
+        margin-top: -50px;
+    }
+
+    .info p{
+        font-size: 10px;
+    }
+
+    .info h3{
+        font-size: 14px;
+        max-width: 145px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    header h1{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    label input{
+        width: 30vw;
+        height: 45px;
+    }
+    .arrow{
+        height: 45px;
+        width: 45px;
+    }
+
+    .infos{
+        margin-top: -90px;
+        flex-direction: column;
+        width: 60vw;
+        height: 35vh;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .border-r{
+        border: 0px;
+    }
+
+    .info{
+        padding: 0px;
+    }
+
+    .info p{
+        font-size: 7px;
+        margin-bottom: 3px;
+        
+    }
+
+    .info h3{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    label input{
+        width: 70vw;
+        height: 45px;
+        margin-top: -10px;
+    }
+
+    .arrow{
+        margin-top: -10px;
+    }
+
+    .infos{
+        width: 80vw;
+        margin-top: -130px;
+        height: 42vh;
+        padding: 0px;
+    }
+
+    .info{
+        padding: 0px;
+    }
+
+    .info p{
+        font-size: 9px;
+        margin-bottom: 6px;
+        
+    }
+
+    .info h3{
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+
 }
